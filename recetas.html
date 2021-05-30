@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+  <meta charset="utf-8">
+  <meta name=“description” content="Blog especializado en recetas y comida tailandesa">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="styles/style.css"> 
+  <title>DOM SUM | Recetas</title>
+  <link id="favicon" rel="shortcut icon" href="img/favico.ico" type="image/x-icon"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>         
+      <a href="index.html">
+        <div>
+          <img data-src="img/logotipo.svg" alt="logotipo de DOM SUM" class="logo lazyload" loading="lazy">
+          <img data-src="img/logotipo-reducido.svg" alt="logotipo reducido de DOM SUM" class="logo-reduce lazyload" loading="lazy">
+          <p>Gastronomía tailandesa</p>
+        </div>
+      </a>
+
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="recetas.html" class="activo">Recetas</a></li>
+        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li><a href="documentacion.html">Documentación</a></li>
+      </ul>
+      <button class="menu-ham" type="button">   
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button> 
+    </nav>
+  </header>
+
+  <main class="main-card-recipe">
+
+    <article class="card-recipe">
+      <img  srcset="img/kaeng-phet-gai-520.webp 520w,
+                    img/kaeng-phet-gai-470.webp 470w,
+                    img/kaeng-phet-gai-420.webp 420w"
+            sizes="(max-width: 576px) 520px,
+                    (max-width: 992px) 470px,
+                    420px"
+            src="img/kaeng-phet-gai-520.jpg"
+            loading="lazy"
+            alt="Receta de Kaeng Phet Gai">
+      <h4>Kaeng Phet Gai</h4>
+      <p>Tradicional plato de pollo y calabacín al curry rojo con un pequeño toque picante</p>
+      <a class="card-link" href="kaeng-phet-gai.html">Ver receta</a>
+    </article>
+
+    <article class="card-recipe">
+      <img  srcset="img/tom-yang-520.webp 520w,
+                    img/tom-yang-470.webp 470w,
+                    img/tom-yang-420.webp 420w"
+            sizes="(max-width: 576px) 520px,
+                    (max-width: 992px) 470px,
+                    420px"
+            data-src="img/tom-yang-520.jpg"
+            class="lazyload"
+            loading="lazy"
+            alt="Receta de tom Yam Kung">
+      <h4>Tom Yam Kung</h4>
+      <p>Sopa de langostinos y leche de coco con un punto picante y muy aromatizada</p>
+      <a class="card-link" href="tom-yam-kung.html">Ver receta</a>
+    </article>
+
+    <article class="card-recipe">
+      <img  srcset="img/kai-med-ma-muang-520.webp 520w,
+                    img/kai-med-ma-muang-470.webp 470w,
+                    img/kai-med-ma-muang-420.webp 420w"
+            sizes="(max-width: 576px) 520px,
+                    (max-width: 992px) 470px,
+                    420px"
+            data-src="img/kai-med-ma-muang-520.jpg"
+            class="lazyload"
+            loading="lazy"
+            alt="Receta de Kai Med Ma Muang">
+      <h4>Kai Med Ma Muang</h4>
+      <p>Salteado de pollo con anarcados fritos y verduras acompañado de salsa de soja</p>
+      <a class="card-link" href="#">Ver receta</a>
+    </article>
+
+    <article class="card-recipe">
+      <img  srcset="img/khao-soi-520.webp 520w,
+                    img/khao-soi-470.webp 470w,
+                    img/khao-soi-420.webp 420w"
+            sizes="(max-width: 576px) 520px,
+                    (max-width: 992px) 470px,
+                    420px"
+            data-src="img/khao-soi-520.jpg"
+            class="lazyload"
+            loading="lazy"
+            alt="Receta de Khao Soi">
+      <h4>Khao Soi</h4>
+      <p>Fideos de huevo frescos y pollo en un rico y caliente caldo de coco y especias</p>
+      <a class="card-link" href="#">Ver receta</a>
+    </article>
+
+    <article class="card-recipe">
+      <img  srcset="img/som-tum-520.webp 520w,
+                    img/som-tum-470.webp 470w,
+                    img/som-tum-420.webp 420w"
+            sizes="(max-width: 576px) 520px,
+                    (max-width: 992px) 470px,
+                    420px"
+            data-src="img/som-tum-520.jpg"
+            class="lazyload"
+            loading="lazy"
+            alt="Receta de Som Tum">
+      <h4>Som Tum</h4>
+      <p>Ensalada picante de papaya verde, con una textura crujiente y sabrosa</p>
+      <a class="card-link" href="#">Ver receta</a>
+    </article>
+
+    <article class="card-recipe">
+      <img  srcset="img/curry-masam-520.webp 520w,
+                    img/curry-masam-470.webp 470w,
+                    img/curry-masam-420.webp 420w"
+            sizes="(max-width: 576px) 520px,
+                    (max-width: 992px) 470px,
+                    420px"
+            data-src="img/curry-masam-520.jpg"
+            class="lazyload"
+            loading="lazy"
+            alt="Receta de Curry Massaman">
+      <h4>Curry Massaman</h4>
+      <p>Sabor proveniente del reino de Siam, curry suave lleno de especias y sabor</p>
+      <a class="card-link" href="#">Ver receta</a>
+    </article>
+  </main>
+
+   <footer>
+      <div>
+        <div class="footer-right">
+          <a href="https://es-es.facebook.com/" aria-label="Ir a su cuenta de Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/?lang=es" aria-label="Ir a su cuenta de Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/" aria-label="Ir a su cuenta de Youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Ir a su cuenta de Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="footer-left">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="documentacion.html">Documentación</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+  <meta charset="utf-8">
+  <meta name=“description” content="Blog especializado en recetas y comida tailandesa">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="styles/style.css"> 
+  <title>DOM SUM | Tom Yam Kung</title>
+  <link id="favicon" rel="shortcut icon" href="img/favico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+
+<body class="body-white">
+
+<header>
+    <nav>         
+      <a href="index.html">
+        <div>
+          <img data-src="img/logotipo.svg" alt="logotipo de DOM SUM" class="logo lazyload"  loading="lazy">
+          <img data-src="img/logotipo-reducido.svg" alt="logotipo reducido de DOM SUM" class="logo-reduce lazyload" loading="lazy">
+          <p>Gastronomía tailandesa</p>
+        </div>
+      </a>
+
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="recetas.html" class="activo">Recetas</a></li>
+        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li><a href="documentacion.html">Documentación</a></li>
+      </ul>
+      <button class="menu-ham" type="button">   
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button> 
+    </nav>
+  </header>
+
+  <main>
+  <section class="banner-recipe banner-recipe-tom-yam-kung">
+      <div>
+          <h1>Tom Yam Kung</h1>
+          <div class="spicy spicy-tom-yam-kung">
+          <img data-src="img/picante.svg" alt="Medidor de picante" class="lazyload"  loading="lazy">
+          <img data-src="img/picante.svg" alt="Medidor de picante"  class="lazyload"  loading="lazy">
+          <img data-src="img/picante.svg" alt="Medidor de picante" class="lazyload"  loading="lazy">
+        </div>
+      </div>
+      <picture>
+        <source media="(max-width: 576px)" srcset="img/tom-yang-banner-576.webp">
+        <source media="(max-width: 992px)" srcset="img/tom-yang-banner-992.webp">
+        <source media="(min-width: 993px)" srcset="img/tom-yang-banner-1280.webp">
+        <img data-src="img/tom-yang-banner-1280.jpg" alt="Receta de Tom Yam Kung" class="lazyload"  loading="lazy">
+      </picture> 
+    </section>
+
+
+    <section class="container-flex-recipe">
+      <div class="ingredient">
+        <h1>Ingredientes</h1>
+        <div>
+          <figure>
+              <img  srcset="img/setas-330.webp 330w,
+                            img/setas-230.webp 230w"
+                    sizes="(max-width: 992px) 330px,
+                            230px"
+                    data-src="img/setas-330.jpg"
+                    class="lazyload"
+                    loading="lazy"
+                    alt="Setas">
+            <figcaption>Setas x 60 g</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/chalota-330.webp 330w,
+                          img/chalota-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/chalota-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Chalota">           
+            <figcaption>Chalota x 1 und.</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/leche-coco-330.webp 330w,
+                          img/leche-coco-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/leche-coco-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Leche de coco">
+            <figcaption>Coco x 200 g</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/langostinos-330.webp 330w,
+                          img/langostinos-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/langostinos-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Langostinos">
+            <figcaption>Langostinos x 150 g</figcaption>
+          </figure>
+
+          <figure>
+             <img srcset="img/galangal-330.webp 330w,
+                          img/galangal-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/galangal-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Galangal">
+            <figcaption>Galangal x 4 rodajas</figcaption>
+          </figure>
+
+          <figure>
+             <img srcset="img/caldo-pollo-330.webp 330w,
+                          img/caldo-pollo-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                data-src="img/caldo-pollo-330.jpg"
+                class="lazyload"
+                loading="lazy"
+                alt="Caldo de pollo">
+            <figcaption>Caldo x 400 ml</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/cilantro-330.webp 330w,
+                          img/cilantro-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/cilantro-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Cilantro">
+            <figcaption>Cilantro x 3 tallos</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/azucar-moreno-330.webp 330w,
+                          img/azucar-moreno-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/azucar-moreno-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Azúcar moreno">
+            <figcaption>Azúcar x 30 g</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/limoncillo-330.webp 330w,
+                          img/limoncillo-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/limoncillo-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Limoncillo">
+            <figcaption>Limoncillo x 1 tallo</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/chile-rojo-330.webp 330w,
+                          img/chile-rojo-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                  230px"
+                  data-src="img/chile-rojo-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Chile rojo">
+            <figcaption>Chile rojo x 3 unds.</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/ajo-330.webp 330w,
+                          img/ajo-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/ajo-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Ajo">
+            <figcaption>Ajo x 1 und.</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/lima-330.webp 330w,
+                          img/lima-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/lima-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Lima kaffir">
+            <figcaption>Lima Kaffir x 30 ml</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="preparation-process"> 
+        <h1>Proceso de preparación</h1>
+        <ol>
+          <li>
+            Pelar y sacar los intestinos a los langostinos, dejando entera la cola. Reservar las cabezas y las cáscaras.
+          </li>
+          <li>
+            Calentar el aceite en una olla grande o wok y añadir las cabezas y las cáscaras de los langostinos
+          </li>
+          <li>
+            Freír durante 5 minutos o hasta que las cáscaras se vuelvan de color naranja brillante. Añadir un tallo de limoncillo a la olla junto con la raíz de galangal y el caldo o agua. Llevar a ebullición, bajar entonces el fuego y cocer durante 25 minutos.
+          </li>
+          <li>
+            Escurrir el caldo y devolverlo a la olla. Tirar las cáscaras y los condimentos. Picar finamente el resto del limoncillo y añadirlo al líquido, junto con los chiles rojos, las hojas de lima, las setas y la chalota.
+          </li>
+          <li>
+            Cocer a fuego suave durante dos minutos.
+          </li>
+          <li>
+            Incorporar los langostinos y cocer durante 3 minutos, o hasta que estén duros y rosados. Retirar del fuego y añadir el zumo de lima.
+          </li>
+          <li>
+            Probar y rectificar el aderezo con más zumo de lima o salsa de pescado en caso necesario.
+          </li>
+          <li>
+            Servir en plato hondo o pequeños bowls y decorar con una buena cantidad de cilantro picado
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="recomendations-recipe">
+      <h1>Otras recetas que pueden interesarte</h1>
+      <div class="container-recomendations">
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="kaeng-phet-gai.html">Kaeng Phet Gai</a></div>
+            <img  srcset="img/kaeng-phet-gai-520.webp 520w,
+                          img/kaeng-phet-gai-470.webp 470w,
+                          img/kaeng-phet-gai-420.webp 420w,
+                          img/kaeng-phet-gai-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  src="img/kaeng-phet-gai-520.jpg"
+                  alt="Receta de Kaeng Phet Gai">
+          </div>
+
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="#">Kai Med Ma Muang</a></div>
+            <img  srcset="img/kai-med-ma-muang-520.webp 520w,
+                          img/kai-med-ma-muang-470.webp 470w,
+                          img/kai-med-ma-muang-420.webp 420w,
+                          img/kai-med-ma-muang-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  src="img/kai-med-ma-muang-520.jpg"
+                  alt="Receta de Kai Med Ma Muang">
+          </div>
+
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="#">Khao Soi</a></div>
+            <img  srcset="img/khao-soi-520.webp 520w,
+                          img/khao-soi-470.webp 470w,
+                          img/khao-soi-420.webp 420w,
+                          img/khao-soi-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  src="img/khao-soi-520.jpg"
+                  alt="Receta de Khao Soi">
+          </div>
+
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="#">Curry Massaman</a></div>
+            <img  srcset="img/curry-masam-520.webp 520w,
+                          img/curry-masam-470.webp 470w,
+                          img/curry-masam-420.webp 420w,
+                          img/curry-masam-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  src="img/curry-masam-520.jpg"
+                  alt="Receta de Curry Massaman">
+          </div>
+
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="#">Som Tum</a></div>
+            <img  srcset="img/som-tum-520.webp 520w,
+                          img/som-tum-470.webp 470w,
+                          img/som-tum-420.webp 420w,
+                          img/som-tum-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  src="img/som-tum-520.jpg"
+                  alt="Receta de Som Tum">
+          </div>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+      <div>
+        <div class="footer-right">
+          <a href="https://es-es.facebook.com/" aria-label="Ir a su cuenta de Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/?lang=es" aria-label="Ir a su cuenta de Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/" aria-label="Ir a su cuenta de Youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Ir a su cuenta de Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="footer-left">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="documentacion.html">Documentación</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

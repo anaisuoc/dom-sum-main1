@@ -1,0 +1,351 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+  <meta charset="utf-8">
+  <meta name=“description” content="Blog especializado en recetas y comida tailandesa">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="styles/style.css"> 
+  <title>DOM SUM | Kaeng Phet Gai</title>
+  <link id="favicon" rel="shortcut icon" href="img/favico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+
+<body class="body-white">
+
+  <header>
+    <nav>         
+      <a href="index.html">
+        <div>
+          <img data-src="img/logotipo.svg" alt="logotipo de DOM SUM" class="logo lazyload"  loading="lazy">
+          <img data-src="img/logotipo-reducido.svg" alt="logotipo reducido de DOM SUM" class="logo-reduce lazyload" loading="lazy">
+          <p>Gastronomía tailandesa</p>
+        </div>
+      </a>
+
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="recetas.html"  class="activo">Recetas</a></li>
+        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li><a href="documentacion.html">Documentación</a></li>
+      </ul>
+      <button class="menu-ham" type="button">   
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button> 
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner-recipe">
+      <div>
+          <h1>Kaeng Phet Gai</h1>
+          <div class="spicy">
+          <img data-src="img/picante.svg" alt="Medidor de picante" class="lazyload"  loading="lazy">
+          <img data-src="img/picante.svg" alt="Medidor de picante" class="lazyload"  loading="lazy">
+          <img data-src="img/picante.svg" alt="Medidor de picante" class="lazyload"  loading="lazy">
+        </div>
+      </div>
+      <picture>
+        <source media="(max-width: 576px)" srcset="img/kaeng-phet-gai-banner-576.webp">
+        <source media="(max-width: 992px)" srcset="img/kaeng-phet-gai-banner-992.webp">
+        <source media="(min-width: 993px)" srcset="img/kaeng-phet-gai-banner-1280.webp">
+        <img data-src="img/kaeng-phet-gai-banner-1280.jpg" alt="Receta de Kaeng Phet Gai" class="lazyload"  loading="lazy">
+      </picture> 
+    </section>
+
+    <section class="container-flex-recipe">
+      <div class="ingredient">
+        <h1>Ingredientes</h1>
+                                  
+        <div>
+          <figure>
+            <img  srcset="img/curry-rojo-330.webp,
+                          img/curry-rojo-495.webp 1.5x,
+                          img/curry-rojo-660.webp 2x"
+                  data-src="img/curry-rojo-660.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Curry rojo">
+            <figcaption>Curry rojo x 50 g</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/cebolla-330.webp,
+                          img/cebolla-495.webp 1.5x,
+                          img/cebolla-660.webp 2x"
+                  data-src="img/cebolla-660.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Cebolla">
+            <figcaption>Cebolla x 1 und.</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/leche-coco-330.webp 330w,
+                          img/leche-coco-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/leche-coco-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Leche de coco">
+            <figcaption>Coco x 400 g</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/pimiento-330.webp 330w,
+                          img/pimiento-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/pimiento-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Pimiento">
+            <figcaption>Pimiento x 2 unds.</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/calabacin-330.webp 330w,
+                          img/calabacin-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/calabacin-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Calabacin">
+            <figcaption>Calabacín x 1 und.</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/cebollin-330.webp 330w,
+                          img/cebollin-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                        230px"
+                  data-src="img/cebollin-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Cebollín">
+            <figcaption>Cebollín x 1 und.</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/muslo-pollo-330.webp 330w,
+                          img/muslo-pollo-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/muslo-pollo-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Muslo de pollo">
+            <figcaption>Pollo x 400 g</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/azucar-moreno-330.webp 330w,
+                          img/azucar-moreno-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/azucar-moreno-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Azúcar moreno">
+            <figcaption>Azúcar x 30 g</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/aceite-oliva-330.webp 330w,
+                          img/aceite-oliva-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/aceite-oliva-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Aceite de oliva">
+            <figcaption>Aceite x 30 ml</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/chile-rojo-330.webp 330w,
+                          img/chile-rojo-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                  230px"
+                  data-src="img/chile-rojo-330.jpg"
+                  class="lazyload"  
+                  loading="lazy"
+                  alt="Chile rojo">
+            <figcaption>Chile rojo x 3 unds.</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/ajo-330.webp 330w,
+                          img/ajo-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/ajo-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Ajo">
+            <figcaption>Ajo x 1 und.</figcaption>
+          </figure>
+
+          <figure>
+            <img  srcset="img/lima-330.webp 330w,
+                          img/lima-230.webp 230w"
+                  sizes="(max-width: 992px) 330px,
+                          230px"
+                  data-src="img/lima-330.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Lima kaffir">
+            <figcaption>Lima Kaffir x 30 ml</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="preparation-process"> 
+        <h1>Proceso de preparación</h1>
+        <ol>
+          <li>
+            Cortar la cebolla, el pimiento y el calabacín en trozos medianos y dejar en una fuente aparte. Cortar el pollo en trozos pequeños y dejar aparte.
+          </li>
+          <li>
+            Picar finamente el ajo y la parte blanca del cebollín. Calentar 30 ml de aceite de oliva en un sartén grande o wok y sofreír el ajo y la parte blanca del cebollín durante un par de minutos a fuego medio-bajo.
+          </li>
+          <li>
+            Añadir la pasta de curry y 400 g de leche de coco, revolver bien durante un par de minutos para que se disuelva la pasta y agregamos los trozos de pollo. Si la pasta no se logra disolver bien, se puede agregar un chorrito de agua caliente.
+          </li>
+          <li>
+            Cocinar bien el pollo a fuego medio, dándole vueltas de vez en cuando. Cuando el pollo ya esté cocido agregamos 30 g de azúcar moreno y  30 ml de salsa de pescado, revolvemos todo muy bien.
+          </li>
+          <li>
+            Agregar los vegetales (cebolla, pimiento rojo y calabacín) a la sartén, los salteamos durante un par de minutos y agregamos la leche de coco. Revolvemos todo y lo dejamos a fuego medio-bajo durante 5 minutos o hasta que la preparación hierva.
+          </li>
+          <li>
+            Apagar el fuego, servir en plato hondo o pequeños bowls y decoramos con un toque verde (parte verde del cebollín y hojas de lima kaffir) y un pequeño ají. La comida se puede acompañar con arroz blanco.
+          </li>
+          <li>
+            Para hacer el arroz blanco (según las instrucciones del paquete) hay que agregar 1 cucharadita de pimienta y 1 cucharada de sal (a gusto).
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="recomendations-recipe">
+      <h1>Otras recetas que pueden interesarte</h1>
+      <div class="container-recomendations">
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="tom-yam-kung.html">Tom Yam Kung</a></div>
+            <img  srcset="img/tom-yang-520.webp 520w,
+                          img/tom-yang-470.webp 470w,
+                          img/tom-yang-420.webp 420w,
+                          img/tom-yang-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  data-src="img/tom-yang-520.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Receta de Tom Yam Kung">
+          </div>
+
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="#">Kai Med Ma Muang</a></div>
+            <img  srcset="img/kai-med-ma-muang-520.webp 520w,
+                          img/kai-med-ma-muang-470.webp 470w,
+                          img/kai-med-ma-muang-420.webp 420w,
+                          img/kai-med-ma-muang-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  data-src="img/kai-med-ma-muang-520.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Receta de Kai Med Ma Muang">
+          </div>
+
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="#">Khao Soi</a></div>
+            <img  srcset="img/khao-soi-520.webp 520w,
+                          img/khao-soi-470.webp 470w,
+                          img/khao-soi-420.webp 420w,
+                          img/khao-soi-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  data-src="img/khao-soi-520.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Receta de Khao Soi">
+          </div>
+
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="#">Curry Massaman</a></div>
+            <img  srcset="img/curry-masam-520.webp 520w,
+                          img/curry-masam-470.webp 470w,
+                          img/curry-masam-420.webp 420w,
+                          img/curry-masam-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  data-src="img/curry-masam-520.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Receta de Curry Massaman">
+          </div>
+
+          <div class="recomendations-object"> 
+            <div><a class="card-link" href="#">Som Tum</a></div>
+            <img  srcset="img/som-tum-520.webp 520w,
+                          img/som-tum-470.webp 470w,
+                          img/som-tum-420.webp 420w,
+                          img/som-tum-400.webp 400w"
+                  sizes="(max-width: 576px) 520px,
+                          (max-width: 768px) 470px,
+                          (max-width: 992px) 420px,
+                          400px"
+                  data-src="img/som-tum-520.jpg"
+                  class="lazyload"
+                  loading="lazy"
+                  alt="Receta de Som Tum">
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+      <div>
+        <div class="footer-right">
+          <a href="https://es-es.facebook.com/" aria-label="Ir a su cuenta de Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/?lang=es" aria-label="Ir a su cuenta de Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/" aria-label="Ir a su cuenta de Youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Ir a su cuenta de Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="footer-left">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="documentacion.html">Documentación</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

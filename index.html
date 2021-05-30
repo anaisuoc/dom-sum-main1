@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+  <meta charset="utf-8">
+  <meta name=“description” content="Blog especializado en recetas y comida tailandesa">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="styles/style.css"> 
+  <title>DOM SUM | Gastronomía tailandesa</title>
+  <link id="favicon" rel="shortcut icon" href="img/favico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+
+<body class="body-index">
+
+  <header>
+    <nav>         
+      <a href="index.html">
+        <div>
+          <img data-src="img/logotipo.svg" alt="logotipo de DOM SUM" class="logo lazyload" loading="lazy">
+          <img data-src="img/logotipo-reducido.svg" alt="logotipo reducido de DOM SUM" class="logo-reduce lazyload" loading="lazy">
+          <p>Gastronomía tailandesa</p>
+        </div>
+      </a>
+
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="recetas.html">Recetas</a></li>
+        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li><a href="documentacion.html">Documentación</a></li>
+      </ul>
+
+      <button class="menu-ham" type="button">   
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button> 
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="logo-index">
+      <div>
+        <img data-src="img/logotipo.svg" alt="logotipo de DOM SUM" class="lazyload" loading="lazy">
+        <h1>Disfruta de la gastronomía tailandesa</h1>
+        <a href="recetas.html">Ver recetas</a>
+      </div>
+      <picture class="background-index">
+        <source media="(max-width: 576px)" srcset="img/background-index-576.webp">
+        <source media="(max-width: 992px)" srcset="img/background-index-992.webp">
+        <source media="(min-width: 993px)" srcset="img/background-index-1280.webp">
+        <img data-src="img/background-index-1280.jpg" alt="Mercado flotante Khlong Lat Mayom"  class="lazyload" loading="lazy">
+      </picture>    
+    </section>
+
+    <section class="container-clip-path">
+        <div>
+          <article class="box-clip-path">
+            <div class="tittle-clip-path">
+              <h2>Sumérgete en sus recetas</h2>
+            </div>
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/destacado-recetas-576.webp">
+              <source media="(max-width: 992px)" srcset="img/destacado-recetas-992.webp">
+              <source media="(min-width: 993px)" srcset="img/destacado-recetas-1280.webp">
+              <img data-src="img/destacado-recetas-1280.jpg" alt="Thai Cookery School"  class="lazyload" loading="lazy">
+            </picture>
+            <div class="content-box-clip-path">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Thai Cookery School, Chiang Mai</p>
+              <p>La gastronomía de Tailandia suele ser algo picante pero con una mezcla de sabores y olores. Se caracteriza por su mezcla equilibrada de sabores ácidos, salados, dulces y picantes. Los productos más utilizados en la cocina tailandesa son verduras, carne, sopas de noodles o con ellos, y hierbas servidas sobre el arroz. De esto surgen una gran multitud de distintos platos.</p>
+            </div>
+          </article>
+
+          <article class="box-clip-path">
+            <div class="tittle-clip-path">
+              <h2>Sumérgete en su naturaleza</h2>
+            </div>
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/destacado-naturaleza-576.webp">
+              <source media="(max-width: 992px)" srcset="img/destacado-naturaleza-992.webp">
+              <source media="(min-width: 993px)" srcset="img/destacado-naturaleza-1280.webp">
+              <img data-src="img/destacado-naturaleza-1280.jpg" alt="Boon Lott’s Elephant Sanctuary"  class="lazyload" loading="lazy">
+            </picture>
+            <div class="content-box-clip-path">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Boon Lott’s Elephant Sanctuary, Sukhothai</p>
+              <p>El elefante blanco es considerado el animal más sagrado, venerado desde hace más de 5.000 años y símbolo de la realeza tailandesa que representa la prosperidad del país. Según cuenta la leyenda, la princesa Maya soñó que un elefante blanco de seis colmillos entraba en su cuerpo engendrando al mismísimo Buda.</p>
+            </div>
+          </article>
+
+          <article class="box-clip-path">
+            <div class="tittle-clip-path">
+              <h2>Sumérgete en su tradición</h2>
+            </div>
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/destacado-tradicion-576.webp">
+              <source media="(max-width: 992px)" srcset="img/destacado-tradicion-992.webp">
+              <source media="(min-width: 993px)" srcset="img/destacado-tradicion-1280.webp">
+              <img data-src="img/destacado-tradicion-1280.jpg" alt="Sala Chalermkrung Royal Theatre" class="lazyload" loading="lazy">
+            </picture>
+            <div class="content-box-clip-path">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Sala Chalermkrung Royal Theatre, Bangkok</p>
+              <p>La danza tailandesa hizo las delicias de la realeza durante varias dinastías, especialmente en la Sukhothai, la Ayutthaya y la Rattanakosin. Con estos bailes se celebran épocas como la cosecha, las fechas religiosas más señaladas y otros momentos importantes para la comunidad.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="meet-us-index">
+        <a href="sobre-nosotros.html">
+          <h2>Conoce a nuestro equipo</h2>
+        </a>
+        <picture>
+          <!-- <source media="(max-width: 576px)" srcset="img/turismo-576.webp">
+          <source media="(max-width: 992px)" srcset="img/turismo-992.webp">
+          <source media="(min-width: 993px)" srcset="img/turismo-1280.webp"> -->
+          <img data-src="img/turismo-1280.jpg" alt="Khao Lak" class="lazyload" loading="lazy">
+        </picture>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div class="footer-right">
+          <a href="https://es-es.facebook.com/" aria-label="Ir a su cuenta de Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/?lang=es" aria-label="Ir a su cuenta de Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/" aria-label="Ir a su cuenta de Youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Ir a su cuenta de Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="footer-left">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="documentacion.html">Documentación</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript/index.js"></script>
+    <script src="javascript/comun.js"></script>
+  </body>
+</html>
